@@ -12,7 +12,7 @@ object RetroConfig {
             .addInterceptor { chain ->
                 val original = chain.request()
                 val requestBuilder = original.newBuilder()
-                    .header("Authorization","token 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") // REPLACE GITHUB_API_KEY WITH YOUR GITHUB API KEY
+                    .header("Authorization","")
                 val request = requestBuilder.build()
                 chain.proceed(request)
             }
